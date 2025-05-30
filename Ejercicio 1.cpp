@@ -2,17 +2,17 @@
 using namespace std;
 
 int main(){
-	int cm;
+	int cantidad_multiplos;
 	int acum=0;
-	cout<<"Ingrese la cantidad de multiplos de 7 que quisiera saber: ";
-	cin>> cm;
-	if (cm<0){
+	cout<<"Ingrese la cantidad de multiplos de 7 que quisiera saber: "<<endl;
+	cin>> cantidad_multiplos;
+	if (cantidad_multiplos<0){
 		cout<<"Solo ingrese cantidades positivas";
 	} else{
-	cout<<"Los "<<cm<<" primeros multiplos de 7 son: "<<endl;
-	for (int i=1; i<=cm; i++){
+	cout<<"Los "<<cantidad_multiplos<<" primeros multiplos de 7 son: "<<endl;
+	for (int i=1; i<=cantidad_multiplos; i++){
 		acum=acum+7;
-		cout<<acum<<endl;
+		cout<<i<<" : "<<acum<<endl;
 	}
 }
 	return 0;
